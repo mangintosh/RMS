@@ -2,7 +2,7 @@
 
 #Registration Management System
 
-*Copyright: 2024
+#Copyright: 2024
 
 #Description
 This is a simple students' registration management system as per project requirements of Software Engineering Module
