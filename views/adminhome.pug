@@ -1,0 +1,91 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  style.
+    /* Your existing styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ddd;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    #userTable {
+      width: 100%;
+      overflow-x: auto;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+    td button {
+      background-color: #ff5555;
+      color: #fff;
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    td button:hover {
+      background-color: #cc0000;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  title osr
+header
+  h1 Welcome to Admin Page
+  h1 Manage user details
+main
+  #userTable
+    table
+      thead
+        tr
+          th First Name
+          th Last Name
+          th Email
+          th Password
+          th Role
+          th Delete
+      tbody
+        each user in users
+          tr
+            td= user.first_name
+            td= user.last_name
+            td= user.user_email
+            td= user.user_password 
+            // Note: You might want to obfuscate or hide passwords for security
+            td= user.user_role
+            td
+              form(method='post' action='/delete-user')
+                input(type='hidden' name='deleteUserId' value=user.user_id)
+                button(type='submit') Delete
+footer
+  | &copy; 2024 All rights reserved.

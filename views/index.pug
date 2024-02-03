@@ -1,0 +1,62 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  style.
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+    nav {
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+    }
+    nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #555;
+    }
+    nav a:hover {
+    background-color: #777;
+    }
+    header {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    }
+    section {
+    padding: 20px;
+    }
+    footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }
+  title osr
+nav
+  a(href='/') Home
+  a(href='register' style='background-color: blue;') Register
+  a(href='login' style='background-color: blue;') Login
+header
+  h1 Welcome to online studies
+section
+  // Your page content goes here
+  p
+    | 1. 
+    a(href='register') Register
+    |  to access the studying materials, or
+  p
+    | 2. If you already have an account, 
+    a(href='login') Login
+    |  to access the studying materials
+footer
+  | &copy; 2024 All rights reserved.
