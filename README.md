@@ -4,7 +4,7 @@
 
 #Description
 This is a simple students' registration management system as per project requirements of Software Engineering Module
-Written in javascript.
+written in javascript.
 
 #Installation
 First Create database 'osr' in mysql
